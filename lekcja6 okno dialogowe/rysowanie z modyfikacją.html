@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<head>
+<title>PAI</title>
+<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+         znak = ""
+
+odstep = 0
+
+x  = 0
+
+y = 0
+
+index = 0
+
+znak = prompt("Jaki znak chcesz wyswietlić?");
+
+odstep = parseInt(prompt("Co ile chesz wyświetlać ten znak?"));
+
+x = parseInt(prompt("Podaj Szerokość"));
+
+y = parseInt(prompt("Podaj Wysokość"));
+
+for(a = 0; a < y; ++a)
+
+{
+
+    for(count = 0; count < x; ++count)
+
+    {
+
+        if(index == odstep)
+
+        {
+
+            document.write(znak);
+
+            index = 0;
+
+        }
+
+        else
+
+        {
+
+            document.write("*");
+
+            index++;
+
+        }
+
+    }
+
+    index = 0;
+
+    document.write("<br>")
+
+}
+
+
+
+</script>
+</body>
+</html>	
