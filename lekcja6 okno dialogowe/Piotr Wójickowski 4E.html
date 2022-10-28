@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dialog</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+ if (confirm("Czy grasz w gry")) {
+ 	var ulubiona = prompt("Jaka jest twoja ulubiona gra komputerowa", "");
+ 	document.write("twoja ulubiona gra to: "+ulubiona);
+ 	var a = prompt("Ile godzin spędziłeś w tej grze", "");
+ 	document.write("" +"<br>");
+ 	document.write("<br>")
+ 	if(a >= 0 && a <= 99){
+             document.write("Jesteś w tym początkujący")
+        }
+        else if(a >= 100 && a <= 299){
+            document.write("Poznałeś już tą gre")
+        }
+        else if(a >= 300 && a >= 300) {
+            document.write("Jesteś w tym mistrzem")
+        
+ 	}
+   } else {
+   document.write("Bardzo Dobrze tak trzymaj");
+ } 
+	</script>
+</body>
+</html>
