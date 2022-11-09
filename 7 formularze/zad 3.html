@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title></title>
+
+</head>
+<body>
+
+
+	kwota pożyczki <input type="number" id="kwota">
+	Na ile miesięcy <input type="number" id="ile">
+	Jakie oprocentowanie<input type="number" id="oprocentowanie">
+	<button onclick="display()">Wyślij</button>
+	<p id="test1"> ... </p>
+	<p id="test2"> ... </p>
+	<p id="test3"> ... </p>
+	
+
+
+	<script type="text/javascript">
+		function display() {
+			var k1 = parseInt(document.getElementById("kwota").value);
+			var i1 = parseInt(document.getElementById("ile").value);
+			var o1 = parseInt(document.getElementById("oprocentowanie").value);
+			document.getElementById("test1").textContent = k1;
+			document.getElementById("test2").textContent = i1;
+			document.getElementById("test3").textContent = o1;
+			var a = (k1/100);
+			var b = (a*o1);
+			var splata = (k1+b);
+			var kwotarat = (splata/i1);
+			document.getElementById("test4").textContent = kwotarat;
+
+		}
+	</script>
+	<br> Miesieczna rata <p id="test4"> ... </p>
+
+</body>
+</html>
